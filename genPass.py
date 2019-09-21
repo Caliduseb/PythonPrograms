@@ -1,5 +1,8 @@
-import random, string, sys, os, base64
-
+import random
+import string
+import sys
+import os
+import base64
 
 class Password:
     def __init__(self, lenght=12):
@@ -36,7 +39,7 @@ class Tools:
             self.path = None
 
         def openfile(self):
-            self.path = str(os.path.expanduser("~")) + "\\Waffels.txt"
+            self.path = str(os.path.expanduser("~")) + "\\Pancakes.txt"
             if os.path.exists(self.path):
                 self.file = open(self.path, "a")
                 self.writefile("\n")
