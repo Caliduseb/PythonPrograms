@@ -5,7 +5,7 @@ import win32gui
 
 time.sleep(5)
 active = True
-x,y = win32gui.GetCursorPos()
+x, y = win32gui.GetCursorPos()
 while active:
     if keyboard.is_pressed("g"):
         active = False
