@@ -1,6 +1,6 @@
 import sys, os, base64
 
-f = open(str(os.path.expanduser("~")) + "\\Waffels.txt", "r")
+f = open(str(os.path.expanduser("~")) + "\\Pancakes.txt", "r")
 c = f.readlines()
 if sys.argv.__len__() > 1:
     for i in c:
