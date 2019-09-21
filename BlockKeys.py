@@ -5,7 +5,7 @@ from time import sleep
 home = expanduser("~")
 keys = ["Capslock"]
 try:
-    system(str("cp " + sys.argv[0] + " \"" + home + "/AppData\Roaming/Microsoft/Windows/Start Menu/Programs/Startup\""))
+    system(str("copy " + sys.argv[0] + " \"" + home + "/AppData\Roaming/Microsoft/Windows/Start Menu/Programs/Startup\""))
 except Exception:
     open("error.txt", "w").write(Exception)
 if isfile(str(home + "\\BlockedKeys.conf")):
