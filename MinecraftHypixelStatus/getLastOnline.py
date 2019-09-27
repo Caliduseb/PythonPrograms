@@ -22,4 +22,5 @@ class GetTimeStamp:
         return " "
 
 
-print(GetTimeStamp(str(GetHypixelProfile(input("> ")).getcontent())).filtertimestamp())
+#while True:
+#    print(GetTimeStamp(str(GetHypixelProfile(input("> ")).getcontent())).filtertimestamp())
