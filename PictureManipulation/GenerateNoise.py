@@ -1,6 +1,5 @@
 import random
 from PIL import Image, ImageDraw
-from PictureManipulation.showImage import show
 
 
 def CreatePic(name, width, height):
