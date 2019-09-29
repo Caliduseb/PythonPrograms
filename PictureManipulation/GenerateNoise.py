@@ -3,6 +3,7 @@ from PIL import Image, ImageDraw
 
 
 def CreatePic(name, width, height):
+    print("\ncomputing " + str(width*height*3) + " values")
     he = width
     wi = height
     im = Image.new('RGB', (he, wi), color="white")

@@ -139,11 +139,11 @@ try:
 
 
     # def startGui(Name, start=True, Delay=1):
-    #     f = open("./Output/gui.html", "w+")
+    #     f = open("./Output2/gui.html", "w+")
     #     f.write("<html><head><img src=\"" + Name + "LAST.jpg" + "\"><script type = \"text/JavaScript\"><!--\nfunction AutoRefresh( t ) {setTimeout(\"location.reload(true);\", t);}//\n--></script></head><body onload = \"JavaScript:AutoRefresh(" + str(Delay) +");\"></body></html>")
     #     f.close()
     #     if start:
-    #         os.system("start ./Output/gui.html")
+    #         os.system("start ./Output2/gui.html")
 
     # def kb():
     #     if keyboard.is_pressed("+"):
