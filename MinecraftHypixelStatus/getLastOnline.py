@@ -22,5 +22,6 @@ class GetTimeStamp:
         return " "
 
 
-#while True:
-#    print(GetTimeStamp(str(GetHypixelProfile(input("> ")).getcontent())).filtertimestamp())
+if __name__ == '__main__':
+    while True:
+        print(GetTimeStamp(str(GetHypixelProfile(input("> ")).getcontent())).filtertimestamp())

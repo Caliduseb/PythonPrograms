@@ -7,7 +7,7 @@ def xor(o, t):
 
 while True:
     msg = input("crypt > ").replace(" ", "_").replace(",", " ")
-    key = input("key > ").replace(" ", "_").replace(",", " ")
+    key = input("key > ").replace(" ", "_").replace(",", " ")+str("a"*500)
 
     keyArray = []
     for char in list(key):
@@ -24,3 +24,4 @@ while True:
         cl += str(chr(char))
 
     print(cl)
+    input("")

@@ -6,11 +6,11 @@ import sys
 
 time.sleep(1)
 minecraft = False
-f = open("german.dic", "r").readlines()
+f = open(input("path to dictionary > "), "r").readlines()
 
 while not keyboard.is_pressed("esc"):
 
-    if sys.argv.__len__()[-1] != "r":
+    if sys.argv[-1] != "r":
         w = random.choice(f)
         if minecraft:
             keyboard.write("t")
@@ -28,4 +28,4 @@ while not keyboard.is_pressed("esc"):
         for i in range(f.__len__()):
             t = f[i:i + 1]
             keyboard.press_and_release(t)
-            keyboard.press_and_release("enter")
+        keyboard.press_and_release("enter")

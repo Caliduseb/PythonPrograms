@@ -7,7 +7,7 @@ def xor(o, t):
 
 while True:
     msg = input("msg > ").replace(" ", "_")
-    key = input("key > ").replace(" ", "_")
+    key = input("key > ").replace(" ", "_")+str("a"*500)
 
     msgArray = []
     keyArray = []
@@ -24,3 +24,4 @@ while True:
         enc += xor(msgArray[index], keyArray[index])
 
     print(enc)
+    input("")
