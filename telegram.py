@@ -9,7 +9,7 @@ class Telegram:
         self.botID = botID
 
     def sendMessage(self, chatID, botMessage):
-        send_text = 'https://api.telegram.org/bot' + self.botID + ":" + self.token + '/sendMessage?chat_id=' + chatID + '&text=' + botMessage
+        send_text = 'https://api.telegram.org/bot' + str(self.botID) + ":" + self.token + '/sendMessage?chat_id=' + chatID + '&text=' + botMessage
         response = requests.get(send_text)
         return response.json()
 

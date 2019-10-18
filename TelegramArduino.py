@@ -1,5 +1,6 @@
 import telegram
 import sys
+import subprocess
 import os
 
 bot = telegram.Telegram(sys.argv[1], sys.argv[2])
@@ -11,4 +12,6 @@ while True:
 
         if message.lower().startswith("arduino"):
             args = message.split(" ")[1]
-            os.system('powershell.exe -ExecutionPolicy Bypass -file ' + os.path.expanduser("~") + '.\\arduino.ps1 "' + args + '_"')
+            send = subprocess.run('powershell.exe -ExecutionPolicy Bypass -file ' + os.path.expanduser("~") +
+                                  '.\\arduino.ps1 "' + args + '_"', stdout=subprocess.PIPE)
+            bot.sendMessage(str(sender), str(send.stdout.decode()))
