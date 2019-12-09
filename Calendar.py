@@ -22,7 +22,7 @@ def prettiefybuffer(buffer):
                 hasbeenone = True
             if hasbeenone: lines[1].append(weekdayCollumn[1])
             lines[5].append(weekdayCollumn[5])
-        except IndexError as e:
+        except IndexError:
             pass
     return lines
 
